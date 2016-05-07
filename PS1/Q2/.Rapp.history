@@ -1,0 +1,262 @@
+plot(x1 ~ x2, data=q1Pos, xlim=c(0,10), ylim=c(0,10), pch=4)
+abline()
+plot(x1 ~ x2, data=q1Neg, xlim=c(0,10), ylim=c(0,10), pch=1)
+par()
+par(new=TRUE)
+plot(x1 ~ x2, data=q1Pos, xlim=c(0,10), ylim=c(0,10), pch=4)
+plot(x1 ~ x2, data=q1Pos, xlim=c(-10,10), ylim=c(-10,10), pch=4)
+par(new=TRUE)
+plot(x1 ~ x2, data=q1Neg, xlim=c(-10,10), ylim=c(-10,10), pch=1)
+par(new=TRUE)
+abline(-2.6205115971780124, 0.7603715358970732/1.1719467415657858)
+abline(-2.6205115971780124, 1)
+abline(-2.6205115971780124, 1.1719467415657858/0.7603715358970732)
+abline(-2.6205115971780124, -1.1719467415657858/0.7603715358970732)
+abline(-2.6205115971780124, -0.7603715358970732/1.1719467415657858)
+intercept=-2.6205115971780124
+theta1=-0.7603715358970732
+theta2=1.1719467415657858
+abline(-intercept/theta2, -theta1/theta2)
+abline(-intercept/theta2, -(theta1/theta2))
+plot(x2 ~ x1, data=q1Pos, xlim=c(0,10), ylim=c(0,10), pch=4)
+plot(x2 ~ x1, data=q1Pos, xlim=c(-10,10), ylim=c(-10,10), pch=4)
+par(new=TRUE)
+plot(x2 ~ x1, data=q1Neg, xlim=c(-10,10), ylim=c(-10,10), pch=1)
+abline(-(intercept/theta2), -(theta1/theta2))
+abline(-(intercept/theta2), (theta1/theta2))
+abline((intercept/theta2), (theta1/theta2))
+intercept=-2.6205115971780124
+theta1=0.7603715358970732
+theta2=1.1719467415657858
+abline(-intercept/theta2, -theta1/theta2)
+plot(x2 ~ x1, data=q1Pos, xlim=c(-10,10), ylim=c(-10,10), pch=4)
+par(new=TRUE)
+plot(x2 ~ x1, data=q1Neg, xlim=c(-10,10), ylim=c(-10,10), pch=1)
+abline(-intercept/theta2, -theta1/theta2)
+a = [1 2; 3 4; 5 6]
+list.dirs
+list.dirs()
+list.files()
+cd
+ls
+getwd
+getwd()
+setwd("/Users/kevinstumpf/Documents/Stanford Lectures/CS229/Problem Sets/PS1/Q2/")
+source()
+source("Q2.R")
+source("Q2.R")
+source("Q2.R")
+mult
+mult(5,6)
+source("Q2.R")
+mult
+mult(6,7)
+k = read.table("q2x.dat")
+k
+source("Q2.R")
+main()
+read.data
+source("Q2.R")
+main()
+x
+source("Q2.R")
+x
+y
+k = c(1,2,3)
+t(k)
+k
+k^-1
+k * (k^1)
+k
+t(x)
+k^-1
+solve(k)
+x
+y
+x_t = t(x)
+x_t
+x_t %*% x
+x_t
+x %*% x
+x%*%x
+str(x)
+data.matrix(x)
+source("Q2.R")
+source("Q2.R")
+source("Q2.R")
+x
+y
+x_t
+str(x)
+str(x_t)
+x_t %*% x
+x %*% x
+x %*% x_t
+solve(x_t %*% x)
+solve(x_t %*% x) %*% x_t
+solve(x_t %*% x) %*% x_t %*% y
+test = x
+x
+test["X0"] = 1
+test
+test = x
+test
+test$X0 = 1
+test[,]
+test[,1]
+test[1]
+test[2]
+k = read.table("q2x.dat")
+k
+str(k)
+k$x = 1
+k
+str(k)
+k$a = 5
+str(k)
+l
+k
+k[,c(1,2,3)]
+k[,c(3,2,1)]
+source("q2.r")
+xDataFrame
+str(xDataFram)
+str(xDataFrame)
+x
+str(x)
+read.table("q2x.dat")
+x
+source("q2.r")
+theta
+plot(x, y, xlim=c(-10,10), ylim=c(-10,10))
+plot(x$V1, y, xlim=c(-10,10), ylim=c(-10,10))
+x
+x$V1
+x[,1]
+x[,2]
+plot(x[,2], y, xlim=c(-10,10), ylim=c(-10,10))
+plot(x[,2],y)
+plot(x[,2], y, xlim=c(-10,20), ylim=c(-2,5))
+theta
+abline(coef=theta)
+source("q2.r")
+theta
+source("q2.r")
+diag(c(1,2,3))
+exp
+exp(5)
+exp(c(1,2,3,5))
+exp(c(1,2,3,5,0))
+x
+x[0,2]
+x[0,5]
+x[0,1]
+x[0,2]
+x[1,1]
+x[1,2]
+c(2,3) * c(2,3)
+c(2,3)^2
+length(x)
+size(x)
+size(x[,])
+length(x[,])
+nrow
+nrow(x)
+vector(length=5)
+vector(length=5) = 3
+m = vector(length=5)
+m
+m[]
+m[] = 3
+m
+x
+xPointVector = vector(length=nrow(x))
+xPointVector
+xPointVector[] = x[2,2]
+xPointVector
+calc_wi = function(xPoint_i, i, roh) {#
+	# xPointVector = vector(length=numDataPoints)#
+	# xPointVector[] = x[xPoint_i,2]#
+#
+	xPoint_val = x[xPoint_i, 2]#
+	x_i_val = x[i, 2];#
+#
+	return(exp(-((xPoint_val - x_i_val)^2) / (2*roh*roh) ))#
+}
+calc_wi
+calc_wi(1,1,0.8)
+calc_wi(1,2,0.8)
+calc_wi(1,2,0.8)
+x[,1]
+x[1,1]
+x[1,2]
+x[1,3]
+x[2,2]
+exp(-(x[1,2]-x[2,2])^2)
+exp(-(x[1,2]-x[2,2])^2 / 2 * 0.8 * 0.8)
+exp(-(x[1,2]-x[2,2])^2 / (2 * 0.8 * 0.8) )
+w = vector(length=numDataPoints);
+numDataPoints = nrow(x)
+w = vector(length=numDataPoints);
+for(i in 1:numDataPoints) {#
+		w[i] = calc_wi(p, i, roh)#
+	}
+p=1
+roh=0.8
+for(i in 1:numDataPoints) {#
+		w[i] = calc_wi(p, i, roh)#
+	}
+w
+wMatrix = diag(w/2)
+wMatrix
+theta_p = solve(x_t %*% wMatrix %*% x) %*% x_t %*% wMatrix %*% y
+theta_p
+source("q2.r")
+theta
+theta %*% x[1,]
+x[1,]
+theta
+x[1,] %*% theta
+source("q2.r")
+predicted_y
+y
+lines(x[,2],predicted_y)
+plot(x[,2],y)
+lines(c(1,2,3), c(1,4,9))
+lines(c(1,2,3), c(0.5,1,4))
+lines(c(1,2,3), c(0.5,1,2))
+lines(c(1,2,3,4,5,6), c(0.5,1,2,1,0.3))
+lines(c(1,2,3,4,5,6), c(0.5,1,2,1,0.3,0.2))
+plot(x[,2],y)
+lines(c(1,2,3,4,5,6), c(0.5,1,2,1,0.3,0.2))
+x
+cbind(x,predicted_y)
+lineData = cbind(x,predicted_y)
+lineData
+lineData[order(lineData$V1),]
+lineData[order(lineData[,2]),]
+plot(x[,2],y)
+lineData = lineData[order(lineData[,2]),]
+lineData
+lines(x[,2],lineData)
+lineData
+lines(lineData[,2],lineData[,3])
+source("q2.r")
+source("q2.r")
+source("q2.r")
+source("q2.r")
+source("q2.r")
+source("q2.r")
+source("q2.r")
+plot(x[,2],y)
+plot(x[,2],y,title="Test")
+plot(x[,2],y,main="Test")
+plot(x[,2],y,main="Test" + roh)
+plot(x[,2],y,main="Test" roh)
+plot(x[,2],y,main=concat("Test", roh))
+concat
+"Test"
+"Test" & "fwe"
+paste("Test", 233)
+paste("Roh", roh)
+source("q2.r")

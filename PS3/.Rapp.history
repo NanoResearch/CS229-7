@@ -1,0 +1,250 @@
+plot(purgeddata$Avg ~ purgeddata$OurPrice, xlim=c(0,10), ylim=c(0,10))
+plot(purgeddata$OurPrice ~ purgeddata$OurPrice, xlim=c(0,10), ylim=c(0,10))
+plot(purgeddata$OurPrice, purgeddata$OurPrice)
+plot(purgeddata$OurPrice, purgeddata$OurPrice, xlim=c(0,10), ylim=c(0,10))
+plot(purgeddata$OurPrice, purgeddata$Avg, xlim=c(0,10), ylim=c(0,10))
+plot(purgeddata$OurPrice, predict(fit), xlim=c(0,10), ylim=c(0,10))
+plot(purgeddata$OurPrice, purgeddata$OurPrice, xlim=c(0,10), ylim=c(0,10))
+plot(purgeddata$OurPrice, purgeddata$Avg, xlim=c(0,10), ylim=c(0,10))
+abline(fit)
+reg = lm(purgeddata$OurPrice ~ purgeddata$Avg)
+plot(purgeddata$Avg, purgeddata$OurPrice)
+plot(purgeddata$Avg, purgeddata$OurPrice, xlim=c(0,10), ylim=c(0,10))
+abline(reg)
+reg = lm(purgeddata$OurPrice ~ purgeddata$Avg + 0)
+abline(reg)
+summary(reg)
+reg = lm(purgeddata$OurPrice ~ purgeddata$Avg)
+predict(reg)
+reg = lm(purgeddata$OurPrice ~ purgeddata$Avg)
+plot(purgeddata$Avg, purgeddata$OurPrice, xlim=c(0,10), ylim=c(0,10))
+plot(predict(reg), purgeddata$OurPrice, xlim=c(0,10), ylim=c(0,10))
+abline(reg)
+plot(predict(reg), purgeddata$OurPrice, xlim=c(0,10), ylim=c(0,10))
+median(abs((predict(lm(OurPrice ~ Avg, data=purgeddata)) - purgeddata$OurPrice)))
+mean(abs((predict(lm(OurPrice ~ Avg, data=purgeddata)) - purgeddata$OurPrice)))
+mean(abs((predict(lm(OurPrice ~ Avg, data=purgeddata)) - purgeddata$OurPrice))) / mean(purgeddata$OurPrice))
+mean(abs((predict(lm(OurPrice ~ Avg, data=purgeddata)) - purgeddata$OurPrice))) / mean(purgeddata$OurPrice)
+mean(purgeddata$OurPrice) / mean(purgeddata$Avg)
+median(purgeddata$OurPrice) / median(purgeddata$Avg)
+mean(abs((purgeddata$Avg - purgeddata$OurPrice))) / mean(purgeddata$OurPrice)
+predict(reg, ab)
+a = c("Avg")
+b = (5, 6)
+b = c(5, 6)
+data.frame(a, b)
+data.frame(c(1))
+data.frame(c(1), row.names=c("A"))
+predict(reg, c(1))
+predict(reg, newdata=c(1))
+predict(reg, newdata=ab)
+data.frame(Avg=as.numeric(c(1)))
+predict(reg, newdata=data.frame(Avg=as.numeric(c(1))))
+summary(reg)
+predict(reg, newdata=data.frame(purgeddata$Avg=as.numeric(c(1))))
+predict(reg, newdata=data.frame(Avg=as.numeric(c(1))), se.fit=TRUE)
+predict(reg, newdata=data.frame(Avg=as.numeric(c(1)))
+predict(reg, newdata=data.frame(Avg=as.numeric(c(1))))
+predict(reg, newdata=data.frame(Avg=as.numeric(c(2))))[0]
+predict(reg, newdata=data.frame(Avg=as.numeric(c(2))))
+predict(reg, newdata=data.frame(Avg=as.numeric(c(5))))
+predict(lm(OurPrice ~ Avg, data=purgeddata), newdata=data.frame(Avg=as.numeric(c(5))))
+predict(lm(OurPrice ~ Avg, data=purgeddata), newdata=data.frame(Avg=as.numeric(c(1))))
+reg = lm(OurPrice ~ Avg, data=purgeddata)
+summary(reg)
+predict(reg, newdata=data.frame(Avg=as.numeric(c(1))))
+predict(reg, newdata=data.frame(Avg=as.numeric(c(2))))
+predict(reg, newdata=ab)
+mean(abs((predict(lm(OurPrice ~ Avg, data=ab)) - ab$OurPrice)))
+mean(abs((ab$Avg - ab$OurPrice)))
+mean(abs((predict(reg, newdata=ab) - ab$OurPrice)))
+plot(ab$OurPrice, ab$Avg)
+plot(ab$OurPrice, ab$Avg, xlim=c(0,10), ylim=c(0,10))
+plot(ab$OurPrice, ab$Avg, xlim=c(0,10), ylim=c(0,10), bg="black")
+plot(ab$OurPrice, ab$Avg, xlim=c(0,10), ylim=c(0,10), col="black")
+plot(ab$OurPrice, ab$Avg, xlim=c(0,10), ylim=c(0,10), col="red")
+plot(ab$OurPrice, ab$OurPrice, xlim=c(0,10), ylim=c(0,10), col="red")
+par(new=TRUE)
+plot(ab$OurPrice, ab$Avg, xlim=c(0,10), ylim=c(0,10), col="green")
+par(new=TRUE)
+plot(ab$OurPrice, predict(reg, newdata=ab), xlim=c(0,10), ylim=c(0,10), col="blue")
+plot(purgeddata$OurPrice, purgeddata$OurPrice, xlim=c(0,10), ylim=c(0,10), col="red")
+par(new=TRUE)
+plot(purgeddata$OurPrice, purgeddata$Avg, xlim=c(0,10), ylim=c(0,10), col="green")
+plot(purgeddata$OurPrice, predict(lm(OurPrice ~ Avg, data=smallset), newdata=purgeddata), xlim=c(0,10), ylim=c(0,10), col="blue")
+plot(purgeddata$OurPrice, purgeddata$OurPrice, xlim=c(0,10), ylim=c(0,10), col="red")
+par(new=TRUE)
+plot(purgeddata$OurPrice, purgeddata$Avg, xlim=c(0,10), ylim=c(0,10), col="green")
+par(new=TRUE)
+plot(purgeddata$OurPrice, predict(lm(OurPrice ~ Avg, data=smallset), newdata=purgeddata), xlim=c(0,10), ylim=c(0,10), col="blue")
+mean(abs(purgeddata$OurPrice - purgeddata$Avg))
+mean(abs(purgeddata$OurPrice - predict(lm(OurPrice ~ Avg, data=smallset), newdata=purgeddata)))
+mean(abs(purgeddata$OurPrice - predict(lm(OurPrice ~ Avg, data=purgeddata), newdata=purgeddata)))
+save.image()
+q1x = read.table('/Users/kevinstumpf/Documents/Stanford Lectures/CS229/Problem Sets/PS1/Q1/q1x.dat')
+q1x
+q1y = read.table('/Users/kevinstumpf/Documents/Stanford Lectures/CS229/Problem Sets/PS1/Q1/q1y.dat')
+q1 = q1x
+q1 = merge(q1x, q1y)
+q1
+q1 = merge(data q1x,data q1y)
+merge(q1x, q1y)
+q1x$key = 1:nrow(q1x)
+q1x
+q1y$key = 1:nrow(q1y)
+q1y
+merge(q1x, q1y, by="key")
+q1 = merge(q1x, q1y, by="key")
+q1
+rename(q1, c("V1.x"="x1"))
+library(plyr)
+install package
+install
+rename(q1, c("V1.x"="x1"))
+library(plyr)
+library(Rcpp)
+library(plyr)
+rename(q1, c("V1.x"="x1"))
+q1
+rename(q1, c("V1.x"="x1", "V2"="x2", "V1.y"="y"))
+q1=rename(q1, c("V1.x"="x1", "V2"="x2", "V1.y"="y"))
+q1[q1$y=0]
+q1[q1$y=0,]
+q1$y
+q1[q1$y:0]
+q1[q1$y==0]
+q1[which(q1$key==0)]
+q1[which(q1$key==0),]
+q1[which(q1$key=='0'),]
+str(q1)
+q1[which(q1$y==0),]
+q1[which(q1$y==1),]
+q1Pos = q1[which(q1$y==1),]
+q1Neg = q1[which(q1$y==0),]
+plot(x1 ~ x2, data=q1Pos)
+plot(x1 ~ x2, data=q1Pos, xlim=c(0,10), ylim=c(0,10))
+plot(x1 ~ x2, data=q1Pos, xlim=c(0,10), ylim=c(0,10), pch=4)
+abline()
+plot(x1 ~ x2, data=q1Neg, xlim=c(0,10), ylim=c(0,10), pch=1)
+par()
+par(new=TRUE)
+plot(x1 ~ x2, data=q1Pos, xlim=c(0,10), ylim=c(0,10), pch=4)
+plot(x1 ~ x2, data=q1Pos, xlim=c(-10,10), ylim=c(-10,10), pch=4)
+par(new=TRUE)
+plot(x1 ~ x2, data=q1Neg, xlim=c(-10,10), ylim=c(-10,10), pch=1)
+par(new=TRUE)
+abline(-2.6205115971780124, 0.7603715358970732/1.1719467415657858)
+abline(-2.6205115971780124, 1)
+abline(-2.6205115971780124, 1.1719467415657858/0.7603715358970732)
+abline(-2.6205115971780124, -1.1719467415657858/0.7603715358970732)
+abline(-2.6205115971780124, -0.7603715358970732/1.1719467415657858)
+intercept=-2.6205115971780124
+theta1=-0.7603715358970732
+theta2=1.1719467415657858
+abline(-intercept/theta2, -theta1/theta2)
+abline(-intercept/theta2, -(theta1/theta2))
+plot(x2 ~ x1, data=q1Pos, xlim=c(0,10), ylim=c(0,10), pch=4)
+plot(x2 ~ x1, data=q1Pos, xlim=c(-10,10), ylim=c(-10,10), pch=4)
+par(new=TRUE)
+plot(x2 ~ x1, data=q1Neg, xlim=c(-10,10), ylim=c(-10,10), pch=1)
+abline(-(intercept/theta2), -(theta1/theta2))
+abline(-(intercept/theta2), (theta1/theta2))
+abline((intercept/theta2), (theta1/theta2))
+intercept=-2.6205115971780124
+theta1=0.7603715358970732
+theta2=1.1719467415657858
+abline(-intercept/theta2, -theta1/theta2)
+plot(x2 ~ x1, data=q1Pos, xlim=c(-10,10), ylim=c(-10,10), pch=4)
+par(new=TRUE)
+plot(x2 ~ x1, data=q1Neg, xlim=c(-10,10), ylim=c(-10,10), pch=1)
+abline(-intercept/theta2, -theta1/theta2)
+a = [1 2; 3 4; 5 6]
+readTiff
+pkg
+install.packages('tiff')
+readTIFF
+packages.load
+library('tiff')
+readTIFF
+readTIFF("~/Documents/Stanford Lectures/CS229/Problem Sets/mandrill-large.tiff")
+img = readTIFF("~/Documents/Stanford Lectures/CS229/Problem Sets/mandrill-large.tiff")
+str(img)
+size(img)
+img[1]
+img[1,1,1]
+img[1,2,1]
+img[1,2,2]
+img[1,2,3]
+img[1,2,4]
+img[1,2]
+img[0]
+img[1]
+img[512]
+img[513]
+img[514]
+writeTIFF(img, "~/Documents/example.tiff")
+writeTIFF(img, "example.tiff")
+writeTIFF(img, "/Users/kevinstumpf/Documents/example.tiff")
+nrow(img)
+ncol(img)
+str(img[1,1])
+array
+is.array(img)
+dim(img)
+dimg(img(1))
+dim(img(1))
+dim(img[1])
+dim(img[1,1,:])
+img[1,1,:]
+k = img
+img[1,1,:]
+img[1,1,]
+img[1,,1]
+img[1,1,1]
+img[1,1,]
+img[1,1,][1]
+img[1,1,][2]
+img[1,1,][3]
+img[1,1,]
+k[,,1] = 1
+k
+k[1,1,1]
+k[1,,1]
+k[1,1,2]
+k[1,1,3]
+writeTIFF(k, "/Users/kevinstumpf/Documents/example.tiff")
+ls
+cd /users/Kevin
+load
+load("./q6.r")
+load("./q6.r2")
+load("./q6.r")
+loadTIFF
+img
+library('tiff')
+source("q6.r")
+source("q6.r")
+source("q6.r")
+q6
+k = q6()
+k
+img = readTIFF("mandrill-small.tiff")
+img
+length(img)
+str(img)
+source("q6.r") && q6()
+source("q6.r")
+source("q6.r");
+source("q6.r"); q6();
+source("q6.r"); q6();
+source("q6.r"); k=q6();
+source("q6.r"); k=q6(); k
+source("q6.r"); k=q6(); k
+array
+array(dim=c(16,3))
+array(0, dim=c(16,3))
+k=array(0, dim=c(16,3))
+k[0]
+k[1,1]
+k[16,3]
+k[16,4]
